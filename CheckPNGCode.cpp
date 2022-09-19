@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 	FILE* fp = fopen(destFile, "rb");					// 尝试读取(r)一个二进制(b)文件,成功则返回一个指向文件结构的指针，失败返回空指针
 	if (fp == NULL)
 	{
-		printf("PE文件读取失败！\n");
+		printf("PNG文件读取失败！\n");
 	}
 	fseek(fp, 0, SEEK_END);							// 设置文件流指针指向PE文件的结尾处
 	FileSize = ftell(fp);							// 得到文件流指针当前位置相对于文件头部的偏移字节数，即获取到了PNG文件大小（字节）
