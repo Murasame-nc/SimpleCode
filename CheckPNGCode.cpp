@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	{
 	}*/
 	long FileSize;
-	destFile = "C:\\Users\\antiy\\Downloads\\pngsucai_607406_c3c768.png";//argv[1];
+	destFile = "C:\\pngsucai_607406_c3c768.png";//argv[1];
 	FILE* fp = fopen(destFile, "rb");					// 尝试读取(r)一个二进制(b)文件,成功则返回一个指向文件结构的指针，失败返回空指针
 	if (fp == NULL)
 	{
